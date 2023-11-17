@@ -38,3 +38,5 @@ const ProjectCard: FC<ProjectCardProps> = ({imgUrl, title, description}) => {
     </div>
     );
 }
+
+export default ProjectCard;

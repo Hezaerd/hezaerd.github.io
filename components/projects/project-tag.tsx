@@ -6,7 +6,7 @@ interface ProjectTagProps {
     isSelected: boolean;
 }
 
-const ProjectTagProps: FC<ProjectTagProps> = ({name, onClick, isSelected}) => {
+const ProjectTag: FC<ProjectTagProps> = ({name, onClick, isSelected}) => {
     const buttonStyles = isSelected
     ? "text-white border-purple-500"
     : "text-[#ADB7BE] border-slate-600 hover:border-white";
@@ -21,4 +21,4 @@ const ProjectTagProps: FC<ProjectTagProps> = ({name, onClick, isSelected}) => {
     );
 }
 
-export default ProjectTagProps;
+export default ProjectTag;
