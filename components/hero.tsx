@@ -3,6 +3,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
 const jobsSequence = [
+    "Swann", 1000,
     "Engine Programmer", 1000,
     "Gameplay Programmer", 1000,
 ];
