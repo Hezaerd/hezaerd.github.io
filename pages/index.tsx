@@ -1,5 +1,6 @@
 import Hero from "@/components/hero";
 import Navbar from "@/components/navbar";
+import About from "@/components/about";
 
 import "@/app/globals.css";
 
@@ -9,6 +10,7 @@ export default function Home() {
             <Navbar />
             <div className="container mx-auto mt-24 px-12 py-4">
                 <Hero />
+                <About />
             </div>
         </main>
     );
