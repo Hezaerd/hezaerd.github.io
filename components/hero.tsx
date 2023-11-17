@@ -27,6 +27,16 @@ export default function Hero() {
                 <p className="text-[#ADB7BE] mb-6 textl-lg lg:text-xl">
                     I'm a game developer who is interested in game engine and gameplay programming.
                 </p>
+                <div>
+                    <button className="bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-200 text-white px-6 py-3 rounded-full mr-4">
+                            Contact Me
+                    </button>
+                    <button className="m-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 px-1 py-1  text-white rounded-full">
+                        <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                            Download CV
+                        </span>
+                    </button>
+                </div>
             </div>
         </section>
     );
