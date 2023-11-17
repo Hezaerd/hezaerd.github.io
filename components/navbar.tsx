@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import Link from "next/link";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
-import NavLink from "./navlink";
-import MenuOverlay from "./menuoverlay";
+import NavLink from "./nav-link";
+import MenuOverlay from "./menu-overlay";
 
 const navigation = [
     { name: 'Home', href: '#'},
