@@ -1,49 +1,49 @@
 import React, { useState } from "react";
-import ProjectCard from "./projects/project-card";
-import ProjectTag from "./projects/project-tag";
+import ProjectCard from "../projects/project-card";
+import ProjectTag from "../projects/project-tag";
 
 const ProjectData = [
     {
         id: 1,
         name: "HezEngine",
         description: "My personnal game engine",
-        tag: ["All", "c++", "game-engine"],
+        tag: ["All", "C++", "game-engine", "Hez"],
         image: "https://via.placeholder.com/255"
         // image: "/images/projects/hezengine.png"
     },
     {
         id: 2,
-        name: "Project 2",
+        name: "CoorsLight Engine",
         description: "This is a project description",
-        tag: ["All", "Unity", "tag2", "tag3"],
-        image: "https://via.placeholder.com/255"
+        tag: ["All", "C++", "game-engine"],
+        image: "https://via.placeholder.com/999x100"
     },
     {
         id: 3,
-        name: "Project 3",
+        name: "Coloris",
         description: "This is a project description",
-        tag: ["All", "tag1", "tag2", "tag3"],
+        tag: ["All", "C#", "Unity"],
         image: "https://via.placeholder.com/255"
     },
     {
         id: 4,
-        name: "Project 4",
+        name: "Nautikart",
         description: "This is a project description",
-        tag: ["All", "tag1", "tag2", "tag3"],
+        tag: ["All", "C++", "Unreal-Engine"],
         image: "https://via.placeholder.com/255"
     },
     {
         id: 5,
-        name: "Project 5",
+        name: "HezMaths",
         description: "This is a project description",
-        tag: ["All", "tag1", "tag2", "tag3"],
+        tag: ["All", "C++", "Hez"],
         image: "https://via.placeholder.com/255"
     },
     {
         id: 6,
-        name: "Project 6",
+        name: "HezAudio",
         description: "This is a project description",
-        tag: ["All", "tag1", "tag2", "tag3"],
+        tag: ["All", "C++", "Hez"],
         image: "https://via.placeholder.com/255"
     },
 ];
@@ -71,14 +71,14 @@ const Projects_Section = () => {
                     isSelected={tag === "All"}
                 />
                 <ProjectTag
-                    name="c++"
+                    name="C++"
                     onClick={handleTagChange}
-                    isSelected={tag === "c++"}
+                    isSelected={tag === "C++"}
                 />
                 <ProjectTag
                     name="game-engine"
                     onClick={handleTagChange}
-                    isSelected={tag === "game-engine"}
+                    isSelected={tag === "C#"}
                 />
                 <ProjectTag
                     name="Unity"
@@ -89,11 +89,6 @@ const Projects_Section = () => {
                     name="Unreal-Engine"
                     onClick={handleTagChange}
                     isSelected={tag === "Unreal-Engine"}
-                />
-                <ProjectTag
-                    name="Maths"
-                    onClick={handleTagChange}
-                    isSelected={tag === "Maths"}
                 />
             </div>
             <div className="grid md:grid-cols-3 gap-8 md:gap-12">

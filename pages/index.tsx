@@ -1,7 +1,7 @@
-import Hero_Section from "@/components/hero-section";
-import Navbar_Section from "@/components/navbar-section";
-import About_Section from "@/components/about-section";
-import Projects_Section from "@/components/projects-section";
+import Hero_Section from "@/components/sections/hero-section";
+import Navbar_Section from "@/components/sections/navbar-section";
+import About_Section from "@/components/sections/about-section";
+import Projects_Section from "@/components/sections/projects-section";
 
 import "@/app/globals.css";
 
