@@ -11,7 +11,7 @@ const navigation = [
     { name: 'Contact', href: "#"},
 ];
 
-export default function Navbar() {
+export default function Navbar_Section() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (

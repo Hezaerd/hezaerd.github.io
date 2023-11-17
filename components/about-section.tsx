@@ -31,7 +31,7 @@ const TAB_DATA = [
     }
 ];
 
-export default function About() {
+export default function About_Section() {
     const [tab, setTab] = useState("skills");
     const [isPending, startTransition] = useTransition();
 
