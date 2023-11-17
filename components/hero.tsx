@@ -13,7 +13,7 @@ export default function Hero() {
         <section className="grid grid-cols-1 lg:grid-cols-12 my-4">
             <div className="col-span-7 place-self-center place-items-center grid lg:place-items-start">
                 <h1 className="text-white max-w-2xl mb-4 lg:text-6xl text-4xl font-extrabold">
-                    <span className="text-transparant text-6xl bg-clip-text bg-grandiant-to-r from-purple-400 to-pink-600">
+                    <span className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
                         Hello, I'm{" "}
                     </span>{""}
                     <br></br>
@@ -38,6 +38,17 @@ export default function Hero() {
                             </a>
                         </span>
                     </button>
+                </div>
+            </div>
+            <div className="col-span-5 place-self-center mt-4 lg:mt-0">
+                <div className="bg-[#181818] lg:w-[350px] lg:h-[350px] w-[200px] h-[200px] rounded-full relative">
+                    <Image
+                        src="/images/hero_image.png"
+                        alt="hero image"
+                        className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full"
+                        width={300}
+                        height={300}
+                    />
                 </div>
             </div>
         </section>
