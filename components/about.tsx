@@ -1,6 +1,6 @@
 import React, {useState, useTransition} from "react";
 import Image from "next/image";
-import TabButton from "./tab-button";
+import TabButton from "./tab/tab-button";
 
 const TAB_DATA = [
     {
