@@ -1,11 +1,15 @@
 import Hero from "@/components/hero";
+import Navbar from "@/components/navbar";
 
 import "@/app/globals.css";
 
 export default function Home() {
     return (
-        <div>
-            <Hero />
-        </div>
+        <main className="flex min-h-screen flex-col bg-[#121212]">
+            <Navbar />
+            <div className="container mx-auto mt-24 px-12 py-4">
+                <Hero />
+            </div>
+        </main>
     );
 }
