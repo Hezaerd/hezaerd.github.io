@@ -33,7 +33,9 @@ export default function Hero() {
                     </button>
                     <button className="m-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 px-1 py-1  text-white rounded-full">
                         <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                            Download CV
+                            <a href="/cv/CV_Rouanet_Swann.pdf" download="CV_Rouanet_Swann.pdf">
+                                Download CV
+                            </a>
                         </span>
                     </button>
                 </div>
