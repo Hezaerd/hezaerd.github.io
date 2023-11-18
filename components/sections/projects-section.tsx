@@ -20,32 +20,33 @@ const ProjectData = [
     },
     {
         id: 3,
-        name: "Coloris",
-        description: "This is a project description",
-        tag: ["All", "C#", "Unity"],
-        image: "https://via.placeholder.com/255"
-    },
-    {
-        id: 4,
-        name: "Nautikart",
-        description: "This is a project description",
-        tag: ["All", "C++", "Unreal-Engine"],
-        image: "https://via.placeholder.com/255"
-    },
-    {
-        id: 5,
         name: "HezMaths",
         description: "This is a project description",
         tag: ["All", "C++", "Hez"],
         image: "https://via.placeholder.com/255"
     },
     {
-        id: 6,
+        id: 4,
         name: "HezAudio",
         description: "This is a project description",
         tag: ["All", "C++", "Hez"],
         image: "https://via.placeholder.com/255"
     },
+    {
+        id: 5,
+        name: "Coloris",
+        description: "This is a project description",
+        tag: ["All", "C#", "Unity"],
+        image: "/images/projects/5.png"
+    },
+    {
+        id: 6,
+        name: "Nautikart",
+        description: "This is a project description",
+        tag: ["All", "C++", "Unreal-Engine"],
+        image: "https://via.placeholder.com/255"
+    },
+
 ];
 
 const Projects_Section = () => {
@@ -89,6 +90,11 @@ const Projects_Section = () => {
                     name="Unreal-Engine"
                     onClick={handleTagChange}
                     isSelected={tag === "Unreal-Engine"}
+                />
+                <ProjectTag
+                    name="Hez"
+                    onClick={handleTagChange}
+                    isSelected={tag === "Hez"}
                 />
             </div>
             <div className="grid md:grid-cols-3 gap-8 md:gap-12">
