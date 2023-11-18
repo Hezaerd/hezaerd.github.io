@@ -2,6 +2,7 @@ import Hero_Section from "@/components/sections/hero-section";
 import Navbar_Section from "@/components/sections/navbar-section";
 import About_Section from "@/components/sections/about-section";
 import Projects_Section from "@/components/sections/projects-section";
+import Footer_Section from "@/components/sections/footer-section";
 
 import "@/app/globals.css";
 
@@ -14,6 +15,7 @@ export default function Home() {
                 <About_Section />
                 <Projects_Section />
             </div>
+            <Footer_Section />
         </main>
     );
 }
