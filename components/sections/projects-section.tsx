@@ -8,29 +8,28 @@ const ProjectData = [
         name: "HezEngine",
         description: "My personnal game engine",
         tag: ["All", "C++", "game-engine", "Hez"],
-        image: "https://via.placeholder.com/255"
-        // image: "/images/projects/hezengine.png"
+        image: "https://via.placeholder.com/200x300"
     },
     {
         id: 2,
         name: "CoorsLight Engine",
         description: "This is a project description",
         tag: ["All", "C++", "game-engine"],
-        image: "https://via.placeholder.com/999x100"
+        image: "https://via.placeholder.com/200x300"
     },
     {
         id: 3,
         name: "HezMaths",
         description: "This is a project description",
         tag: ["All", "C++", "Hez"],
-        image: "https://via.placeholder.com/255"
+        image: "https://via.placeholder.com/200x300"
     },
     {
         id: 4,
         name: "HezAudio",
         description: "This is a project description",
         tag: ["All", "C++", "Hez"],
-        image: "https://via.placeholder.com/255"
+        image: "https://via.placeholder.com/200x300"
     },
     {
         id: 5,
@@ -44,7 +43,7 @@ const ProjectData = [
         name: "Nautikart",
         description: "This is a project description",
         tag: ["All", "C++", "Unreal-Engine"],
-        image: "https://via.placeholder.com/255"
+        image: "https://via.placeholder.com/200x300"
     },
 
 ];
