@@ -2,18 +2,18 @@ import React, {useState, useTransition} from "react";
 import Image from "next/image";
 import TabButton from "../tab/tab-button";
 
+const skills_content = ['C++ / C / C#', 'Visual Studio', 'Unreal Engine', 'Unity', 'Git & Perforce', 'Trello & Asana'];
+const education_content = ['Isart Digital Paris - 2023/present', 'Isart Digital Montréal - 2021/2023', 'French High School - 2018/2021'];
+
 const TAB_DATA = [
     {
         title: "Skills",
         id: "skills",
         content: (
             <ul className="list-disc pl-2">
-                <li>C++ / C / C#</li>
-                <li>Visual Studio</li>
-                <li>Unreal Engine</li>
-                <li>Unity</li>
-                <li>Git & Perforce</li>
-                <li>Trello & Asana</li>
+                {skills_content.map((skill, index) => (
+                    <li key={index}>{skill}</li>
+                ))}
             </ul>
         ),
     },
@@ -22,10 +22,9 @@ const TAB_DATA = [
         id: "education",
         content: (
             <ul className="list-disc pl-2">
-                <li>Isart Digital Paris - 2023/present</li>
-                <li>Isart Digital Montréal - 2021/2023</li>
-                {/* <li>French High School - far too long/2021</li> */}
-
+                {education_content.map((education, index) => (
+                    <li key={index}>{education}</li>
+                ))}
             </ul>
         ),
     }
