@@ -5,7 +5,6 @@ import NavLink from "../nav/nav-link";
 import MenuOverlay from "../menu/menu-overlay";
 
 const navigation = [
-    { name: 'Home', href: '#'},
     { name: 'About', href: '#'},
     { name: 'Portfolio', href: '#'},
     { name: 'Contact', href: "#"},
