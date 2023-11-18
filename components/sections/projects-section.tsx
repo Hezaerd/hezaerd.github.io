@@ -8,42 +8,54 @@ const ProjectData = [
         name: "HezEngine",
         description: "My personnal game engine",
         tag: ["All", "C++", "game-engine", "Hez"],
-        image: "https://via.placeholder.com/200x300"
+        image: "https://via.placeholder.com/200x300",
+        releaseLink: "#",
+        sourcesLink: "https://github.com/Hezaerd/HezEngine",
     },
     {
         id: 2,
         name: "CoorsLight Engine",
-        description: "This is a project description",
+        description: "Graduation project at Isart Digital Montréal",
         tag: ["All", "C++", "game-engine"],
-        image: "https://via.placeholder.com/200x300"
+        image: "https://via.placeholder.com/200x300",
+        releaseLink: "#",
+        sourcesLink: "https://github.com/gabrielboisvert/CoorsLightEngine",
     },
     {
         id: 3,
         name: "HezMaths",
-        description: "This is a project description",
+        description: "Collection of mathemathical tools for rendering",
         tag: ["All", "C++", "Hez"],
-        image: "https://via.placeholder.com/200x300"
+        image: "https://via.placeholder.com/200x300",
+        releaseLink: "#",
+        sourcesLink: "https://github.com/Hezaerd/HezMaths",
     },
     {
         id: 4,
         name: "HezAudio",
-        description: "This is a project description",
+        description: "A simple audio library based on OpenAL",
         tag: ["All", "C++", "Hez"],
-        image: "https://via.placeholder.com/200x300"
+        image: "https://via.placeholder.com/200x300",
+        releaseLink: "#",
+        sourcesLink: "#",
     },
     {
         id: 5,
         name: "Coloris",
         description: "This is a project description",
         tag: ["All", "C#", "Unity"],
-        image: "/images/projects/5.png"
+        image: "/images/projects/5.png",
+        releaseLink: "#",
+        sourcesLink: "#",
     },
     {
         id: 6,
         name: "Nautikart",
         description: "This is a project description",
         tag: ["All", "C++", "Unreal-Engine"],
-        image: "https://via.placeholder.com/200x300"
+        image: "https://via.placeholder.com/200x300",
+        releaseLink: "#",
+        sourcesLink: "#",
     },
 
 ];
@@ -100,9 +112,11 @@ const Projects_Section = () => {
                 {filterProjects.map((project, index) => (
                     <ProjectCard
                         key={project.id}
-                        title={project.name}
+                        name={project.name}
                         description={project.description}
                         imgUrl={project.image}
+                        releaseLink={project.releaseLink}
+                        sourcesLink={project.sourcesLink}
                     />
                 ))}
             </div>
