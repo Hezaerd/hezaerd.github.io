@@ -11,7 +11,6 @@ interface ProjectCardProps {
 
 const ProjectCard: FC<ProjectCardProps> = ({imgUrl, title, description}) => {
     return (
-        <div>
             <div
                 className="group rounded-t-xl h-52 md:h-72 bg-center relative overflow-hidden"
                 aria-label={title}
@@ -36,7 +35,6 @@ const ProjectCard: FC<ProjectCardProps> = ({imgUrl, title, description}) => {
                 <p className="text-[#ADB7BE]">{description}</p>
             </div>
         </div>
-    </div>
     );
 }
 
