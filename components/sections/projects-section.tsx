@@ -88,7 +88,7 @@ const Projects_Section = () => {
                     isSelected={tag === "C++"}
                 />
                 <ProjectTag
-                    name="game-engine"
+                    name="C#"
                     onClick={handleTagChange}
                     isSelected={tag === "C#"}
                 />
