@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC, useState} from "react";
 import Link from "next/link";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 
@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 const ProjectCard: FC<ProjectCardProps> = ({name, description, imgUrl, releaseLink, sourcesLink}) => {
     return (
-        <div>
+        <div className="group hover:shadow-xl hover:shadow-pink-500/20">
             <div
                 className="group rounded-t-xl h-52 md:h-72 bg-center relative overflow-hidden"
                 aria-label={name}
@@ -37,8 +37,12 @@ const ProjectCard: FC<ProjectCardProps> = ({name, description, imgUrl, releaseLi
                     </a>
                 </div>
             </div>
-                <div className="bg-[#181818] rounded-b-xl py-6 px-4 text-white">
-                    <h5 className="font-lg font-semibold">{name}</h5>
+                <div className="bg-[#181818] rounded-b-xl py-6 px-4 ">
+                    <h5 className="font-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r 
+                    from-purple-500 to-pink-500
+                    group-hover:from-pink-500 group-hover:to-purple-500">
+                        {name}
+                    </h5>
                     <p className="text-[#ADB7BE]">{description}</p>
                 </div>
         </div>
