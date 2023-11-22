@@ -15,7 +15,7 @@ const MenuOverlay: FC<MenuOverlayProps> = ({ links }) => {
     <ul className="flex flex-col py-4 items-center">
       {links.map((link, index) => (
         <li key={index}>
-          <NavLink href={link.href} title={link.name} />
+          <NavLink href={link.href} name={link.name} />
         </li>
       ))}
     </ul>

@@ -47,7 +47,7 @@ export default function Navbar_Section() {
                                 <li>
                                     <NavLink
                                         key={item.name}
-                                        title={item.name}
+                                        name={item.name}
                                         href={item.href}
                                     />
                                 </li>
