@@ -56,19 +56,45 @@ const ProjectData = [
         image: "https://via.placeholder.com/200x300",
         releaseLink: "#",
         sourcesLink: "#",
-    },
+    }
+];
 
+const Tags = [
+    {
+        id: 1,
+        name: "All",
+    },
+    {
+        id: 2,
+        name: "C++",
+    },
+    {
+        id: 3,
+        name: "C#",
+    },
+    {
+        id: 4,
+        name: "Unity",
+    },
+    {
+        id: 5,
+        name: "Unreal-Engine",
+    },
+    {
+        id: 6,
+        name: "Hez",
+    },
 ];
 
 const Projects_Section = () => {
-    const [tag, setTage] = useState("All");
+    const [currentTag, setTag] = useState("All");
 
     const filterProjects = ProjectData.filter((project) => 
-        project.tag.includes(tag)
+        project.tag.includes(currentTag)
     );
 
     const handleTagChange = (newTag: string) => {
-        setTage(newTag);
+        setTag(newTag);
     }
 
     return (
@@ -77,36 +103,14 @@ const Projects_Section = () => {
                 My Projects
             </h2>
             <div className="flex flex-row justify-center items-center gap-2 text-white my-6">
-                <ProjectTag
-                    name="All"
-                    onClick={handleTagChange}
-                    isSelected={tag === "All"}
-                />
-                <ProjectTag
-                    name="C++"
-                    onClick={handleTagChange}
-                    isSelected={tag === "C++"}
-                />
-                <ProjectTag
-                    name="C#"
-                    onClick={handleTagChange}
-                    isSelected={tag === "C#"}
-                />
-                <ProjectTag
-                    name="Unity"
-                    onClick={handleTagChange}
-                    isSelected={tag === "Unity"}
-                />
-                <ProjectTag
-                    name="Unreal-Engine"
-                    onClick={handleTagChange}
-                    isSelected={tag === "Unreal-Engine"}
-                />
-                <ProjectTag
-                    name="Hez"
-                    onClick={handleTagChange}
-                    isSelected={tag === "Hez"}
-                />
+                {Tags.map((tag, index) => (
+                    <ProjectTag
+                        key={index}
+                        name={tag.name}
+                        onClick={() => handleTagChange(tag.name)}
+                        isSelected={tag.name === currentTag}
+                    />
+                ))}
             </div>
             <div className="grid md:grid-cols-3 gap-8 md:gap-12">
                 {filterProjects.map((project, index) => (
