@@ -44,8 +44,9 @@ export default function Navbar_Section() {
                     <ul className="font-medium flex p-4 md:p-0  rounded-lg flex-row md:space-x-8 mt-0">
                         {navigation.map((item) => {
                             return (
-                                <li>
-                                    key = {item.name}
+                                <li
+                                    key={item.name}
+                                >
                                     <NavLink
                                         key={item.name}
                                         name={item.name}
