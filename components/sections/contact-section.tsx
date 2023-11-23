@@ -111,7 +111,7 @@ const Contact_Section = () => {
                                 value={formState.message}
                                 onChange={handleChange}
                                 className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
-                                placeholder="Let'&apos's talk about..."
+                                placeholder="Let's talk about..."
                             />
                         </div>
                         <div className="mb-6">
