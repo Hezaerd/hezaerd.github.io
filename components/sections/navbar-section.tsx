@@ -45,6 +45,7 @@ export default function Navbar_Section() {
                         {navigation.map((item) => {
                             return (
                                 <li>
+                                    key = {item.name}
                                     <NavLink
                                         key={item.name}
                                         name={item.name}
