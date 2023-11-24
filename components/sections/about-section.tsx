@@ -46,7 +46,7 @@ export default function About_Section() {
                 <Image src="/images/about-image.png" alt="About me" width={500} height={500} />
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-                    <p className="text-white texxt-base md:text-lg">
+                    <p className="text-white text-base md:text-lg">
                         I am a game developer with a passion for programming and video games. 
                         I am currently studying at Isart Digital Paris to become a game programmer.
                         I am looking for an internship in a game studio to learn more about the industry and improve my skills.
