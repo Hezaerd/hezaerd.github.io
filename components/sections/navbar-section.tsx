@@ -5,9 +5,9 @@ import NavLink from "../nav/nav-link";
 import MenuOverlay from "../menu/menu-overlay";
 
 const navigation = [
-    { name: 'About', href: '#'},
-    { name: 'Portfolio', href: '#'},
-    { name: 'Contact', href: "#"},
+    { name: 'About', href: '#about'},
+    { name: 'Portfolio', href: '#projects'},
+    { name: 'Contact', href: "#contact"},
 ];
 
 export default function Navbar_Section() {
