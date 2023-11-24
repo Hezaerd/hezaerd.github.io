@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -14,7 +15,6 @@ const strings = {
     message: "Message",
     send: "Send message",
 };
-    
 
 const Contact_Section = () => {
     const [formState, setFormState] = useState({
@@ -28,27 +28,73 @@ const Contact_Section = () => {
         setFormState({ ...formState, [name]: value });
     };
 
+    const resetForm = () => {
+        setFormState({
+            email: "",
+            subject: "",
+            message: "",
+        });
+    }
+
+    const successToast = () => {
+        toast.success(
+            'Email sent successfully!',
+            {
+                position: "top-right",
+                autoClose: 2500,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+            }
+        );
+    }
+
+    const errorToast = () => {
+        toast.error(
+            'Email failed to send!',
+            {
+                position: "top-right",
+                autoClose: 2500,
+                hideProgressBar: true,
+                closeOnClick: true,
+                pauseOnHover: true,
+            }
+        );
+    }
+
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log(formState);
 
         const from = formState.email;
         const subject = formState.subject;
-        const content = formState.message;
+        const message = formState.message;
 
-        const response = await fetch("/api/send-email", {
+        fetch("/api/send-email", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
             },
-            body: JSON.stringify({ from, subject, content })
+            body: JSON.stringify({ 
+                from: from, 
+                subject: subject, 
+                message: message 
+            }),
+        })
+        .then(res => {
+            if (res.status === 200) {
+                console.log('Email sent successfully');
+                successToast();
+                resetForm();
+            } else {
+                console.log('Email failed to send');
+                errorToast();
+            }
+        })
+        .catch(err => {
+            console.error('An error occurred:', err);
+            errorToast();
         });
 
-        if (response.ok) {
-            console.log("Email sent!");
-        } else {
-            console.log("Email failed to send.");
-        }
     }
 
     return (
@@ -115,7 +161,7 @@ const Contact_Section = () => {
                                 name="message"
                                 value={formState.message}
                                 onChange={handleChange}
-                                className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg  block w-full p-2.5"
+                                className="bg-gray-[#18191E] border border-[#33353F] bg-[#18191E] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
                                 placeholder="Let's talk about..."
                             />
                         </div>
