@@ -6,8 +6,10 @@ import Footer_Section from "@/components/sections/footer-section";
 import Contact_Section from "@/components/sections/contact-section";
 
 import Head from "next/head";
+import { ToastContainer } from "react-toastify";
 
 import "@/app/globals.css";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
     return (
@@ -26,6 +28,7 @@ export default function Home() {
                     <Contact_Section />
                 </div>
                 <Footer_Section />
+                <ToastContainer />
             </main>
         </div>
     );
