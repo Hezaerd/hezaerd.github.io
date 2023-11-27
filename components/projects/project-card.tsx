@@ -14,9 +14,9 @@ const ProjectCard: FC<ProjectCardProps> = ({name, description, imgUrl, releaseLi
     return (
         <div className="group hover:shadow-xl hover:shadow-pink-500/20">
             <div
-                className="group rounded-t-xl h-52 md:h-72 bg-center relative overflow-hidden"
+                className="h-52 md:h-72 rounded-t-xl relative group"
                 aria-label={name}
-                style={{ background: `url(${imgUrl})`, backgroundSize: 'contain', backgroundPosition: 'center', height: '200px'}}
+                style={{ background: `url(${imgUrl})`, backgroundSize: 'cover', backgroundPosition: 'center'}}
             >
                 <div className="overlay absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500 items-center justify-center">
                     <a
@@ -39,8 +39,8 @@ const ProjectCard: FC<ProjectCardProps> = ({name, description, imgUrl, releaseLi
             </div>
                 <div className="bg-[#181818] rounded-b-xl py-6 px-4 ">
                     <h5 className="font-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r 
-                    from-purple-500 to-pink-500
-                    group-hover:from-pink-500 group-hover:to-purple-500">
+                    from-primary-500 to-secondary-500
+                    group-hover:from-secondary-500 group-hover:to-primary-500">
                         {name}
                     </h5>
                     <p className="text-[#ADB7BE]">{description}</p>
