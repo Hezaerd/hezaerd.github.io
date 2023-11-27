@@ -126,6 +126,7 @@ const Projects_Section = () => {
             <ul className="grid md:grid-cols-3 gap-8 md:gap-12">
                 {filterProjects.map((project, index) => (
                     <motion.li
+                        key={project.id}
                         variants={cardVariants}
                         initial="initial"
                         animate={isInView ? "animate" : "initial"}
