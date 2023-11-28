@@ -8,7 +8,7 @@ interface ProjectTagProps {
 
 const ProjectTag: FC<ProjectTagProps> = ({name, onClick, isSelected}) => {
     const buttonStyles = isSelected
-    ? "text-white border-purple-500 shadow-md shadow-purple-500/25"
+    ? "text-white border-primary-500 shadow-md shadow-purple-500/25"
     : "text-[#ADB7BE] border-slate-600 hover:border-white";
     
     return (
