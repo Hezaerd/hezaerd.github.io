@@ -3,10 +3,11 @@ import React, {useState, useTransition} from "react";
 import Image from "next/image";
 import TabButton from "../tab/tab-button";
 import { motion } from "framer-motion";
+import { Tab } from "@headlessui/react";
 
 const skills_content = ['C++ / C / C#', 'Visual Studio', 'Unreal Engine', 'Unity', 'Git & Perforce', 'Trello & Asana'];
 const education_content = ['Isart Digital Paris - 2023/present', 'Isart Digital Montréal - 2021/2023', 'French High School - 2018/2021'];
-
+const intrests_content = ['Mmorpgs (WoW suppremacy)', "Minecraft", "League of Legends"];
 
 
 
@@ -52,7 +53,26 @@ export default function About_Section() {
                     ))}
                 </ul>
             ),
-        }
+        },
+        {
+            title: "Intrests",
+            id: "intrests",
+            content: (
+                <ul key={tab} className="list-disc pl-2">
+                    {intrests_content.map((intrest, index) => (
+                        <motion.li 
+                            key={index}
+                            initial={{ opacity: 0, y: 20}}
+                            animate={{ opacity: 1, y: 0}}
+                            transition={{ duration: 0.5, delay: index * 0.05 }}
+                            className="mb-2"
+                        >
+                                {intrest}
+                        </motion.li>
+                    ))}
+                </ul>
+            ),
+        },
     ];
 
     const handleTabChange = (id: string) => {
@@ -87,6 +107,12 @@ export default function About_Section() {
                             active={tab === "education"}
                         >
                             Education
+                        </TabButton>
+                        <TabButton
+                            selectTab={() => handleTabChange("intrests")}
+                            active={tab === "intrests"}
+                        >
+                            Intrests
                         </TabButton>
                     </div>
                     <div className="mt-8">
