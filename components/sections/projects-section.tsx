@@ -7,9 +7,9 @@ const ProjectData = [
     {
         id: 1,
         name: "HezEngine",
-        description: "My personnal game engine",
-        tag: ["All", "C++", "game-engine", "Hez"],
-        image: "https://via.placeholder.com/200x300",
+        description: "My own game engine (WIP)",
+        tag: ["All", "C++", "Hez"],
+        image: "/images/projects/hezengine.png",
         releaseLink: "#",
         sourcesLink: "https://github.com/Hezaerd/HezEngine",
     },
@@ -17,8 +17,8 @@ const ProjectData = [
         id: 2,
         name: "CoorsLight Engine",
         description: "Graduation project at Isart Digital Montréal",
-        tag: ["All", "C++", "game-engine"],
-        image: "https://via.placeholder.com/200x300",
+        tag: ["All", "C++", "Isart"],
+        image: "/images/projects/coorslight.png",
         releaseLink: "#",
         sourcesLink: "https://github.com/gabrielboisvert/CoorsLightEngine",
     },
@@ -27,7 +27,7 @@ const ProjectData = [
         name: "HezMaths",
         description: "Collection of mathemathical tools for rendering",
         tag: ["All", "C++", "Hez"],
-        image: "https://via.placeholder.com/200x300",
+        image: "/images/projects/hezmaths.png",
         releaseLink: "#",
         sourcesLink: "https://github.com/Hezaerd/HezMaths",
     },
@@ -36,27 +36,27 @@ const ProjectData = [
         name: "HezAudio",
         description: "A simple audio library based on OpenAL",
         tag: ["All", "C++", "Hez"],
-        image: "https://via.placeholder.com/200x300",
+        image: "/images/projects/hezaudio.png",
         releaseLink: "#",
-        sourcesLink: "#",
+        sourcesLink: "https://github.com/Hezaerd/HezAudio",
     },
     {
         id: 5,
         name: "Coloris",
         description: "This is a project description",
-        tag: ["All", "C#", "Unity"],
-        image: "/images/projects/5.png",
+        tag: ["All", "C#", "Isart"],
+        image: "/images/projects/coloris.png",
         releaseLink: "#",
-        sourcesLink: "#",
+        sourcesLink: "https://github.com/Hezaerd/Coloris",
     },
     {
         id: 6,
         name: "Nautikart",
-        description: "This is a project description",
-        tag: ["All", "C++", "Unreal-Engine"],
-        image: "https://via.placeholder.com/200x300",
-        releaseLink: "#",
-        sourcesLink: "#",
+        description: "Mario Kart like racing game",
+        tag: ["All", "C++", "Isart"],
+        image: "/images/projects/nautikart.png",
+        releaseLink: "https://github.com/BreizhBienv/NautiKart/releases/tag/v1.0.0",
+        sourcesLink: "https://github.com/BreizhBienv/NautiKart",
     }
 ];
 
@@ -75,16 +75,12 @@ const Tags = [
     },
     {
         id: 4,
-        name: "Unity",
+        name: "Hez",
     },
     {
         id: 5,
-        name: "Unreal-Engine",
-    },
-    {
-        id: 6,
-        name: "Hez",
-    },
+        name: "Isart",
+    }
 ];
 
 const Projects_Section = () => {
