@@ -4,10 +4,26 @@ import Image from "next/image";
 import TabButton from "../tab/tab-button";
 import { motion } from "framer-motion";
 import { Tab } from "@headlessui/react";
+import { title } from "process";
+import { link } from "fs";
 
 const skills_content = ['C++ / C / C# / Python', 'Visual Studio', 'Unreal Engine', 'Unity', 'Git & Perforce', 'Trello & Asana'];
 const education_content = ['Isart Digital Paris - 2023/present', 'Isart Digital Montréal - 2021/2023', 'French High School - 2018/2021'];
-const intrests_content = ['Mmorpgs (WoW suppremacy)', "Minecraft", "League of Legends"];
+const intrests_content = ['Mmorpgs (WoW suppremacy)', "Minecraft", "League of Legends", "Windsurf & other sailing sports"];
+const game_socials = [
+    {
+        name : "raider.io",
+        link : "https://raider.io/characters/eu/hyjal/Hezaerd"
+    },
+    {
+        name : "NameMC",
+        link : "https://fr.namemc.com/profile/Hezaerd.1"
+    },
+    {
+        name : "op.gg",
+        link : "https://www.op.gg/summoners/euw/Hezaerd-YUUMI"
+    }
+]
 
 
 
@@ -73,6 +89,27 @@ export default function About_Section() {
                 </ul>
             ),
         },
+        {
+            title: "Game Socials",
+            id: "game_socials",
+            content: (
+                <ul key={tab} className="list-disc pl-2">
+                    {game_socials.map((socials, index) => (
+                        <motion.li 
+                            key={index}
+                            initial={{ opacity: 0, y: 20}}
+                            animate={{ opacity: 1, y: 0}}
+                            transition={{ duration: 0.5, delay: index * 0.05 }}
+                            className="mb-2"
+                        >
+                            <a href={socials.link} target="_blank" rel="noreferrer">
+                                {socials.name}
+                            </a>
+                        </motion.li>
+                    ))}
+                </ul>
+            ),
+        }
     ];
 
     const handleTabChange = (id: string) => {
@@ -113,6 +150,12 @@ export default function About_Section() {
                             active={tab === "intrests"}
                         >
                             Intrests
+                        </TabButton>
+                        <TabButton
+                            selectTab={() => handleTabChange("game_socials")}
+                            active={tab === "game_socials"}
+                        >
+                            Game Socials
                         </TabButton>
                     </div>
                     <div className="mt-8">
