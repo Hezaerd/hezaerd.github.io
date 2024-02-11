@@ -5,7 +5,7 @@ import TabButton from "../tab/tab-button";
 import { motion } from "framer-motion";
 import { Tab } from "@headlessui/react";
 
-const skills_content = ['C++ / C / C#', 'Visual Studio', 'Unreal Engine', 'Unity', 'Git & Perforce', 'Trello & Asana'];
+const skills_content = ['C++ / C / C# / Python', 'Visual Studio', 'Unreal Engine', 'Unity', 'Git & Perforce', 'Trello & Asana'];
 const education_content = ['Isart Digital Paris - 2023/present', 'Isart Digital Montréal - 2021/2023', 'French High School - 2018/2021'];
 const intrests_content = ['Mmorpgs (WoW suppremacy)', "Minecraft", "League of Legends"];
 
