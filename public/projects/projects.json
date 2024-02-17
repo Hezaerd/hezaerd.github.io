@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "BirdMancer",
+        "description": "Tech art project trying to push Niagara to its limits",
+        "tag": ["All", "Isart"],
+        "image": "/images/projects/birdmancer.gif",
+        "releaseLink": "https://github.com/Hezaerd/BirdMancer/releases/tag/v1.0.0",
+        "sourcesLink": "https://github.com/Hezaerd/BirdMancer"
+    },
+    {
+        "id": 2,
+        "name": "CoorsLight Engine",
+        "description": "Graduation project at Isart Digital Montréal",
+        "tag": ["All", "C++", "Isart"],
+        "image": "/images/projects/coorslight.png",
+        "releaseLink": "#",
+        "sourcesLink": "https://github.com/gabrielboisvert/CoorsLightEngine"
+    },
+    {
+        "id": 3,
+        "name": "HezMaths",
+        "description": "Collection of mathemathical tools for rendering",
+        "tag": ["All", "C++", "Hez"],
+        "image": "/images/projects/hezmaths.png",
+        "releaseLink": "#",
+        "sourcesLink": "https://github.com/Hezaerd/HezMaths"
+    },
+    {
+        "id": 4,
+        "name": "HezAudio",
+        "description": "An audio library based on OpenAL",
+        "tag": ["All", "C++", "Hez"],
+        "image": "/images/projects/hezaudio.png",
+        "releaseLink": "#",
+        "sourcesLink": "https://github.com/Hezaerd/HezAudio"
+    },
+    {
+        "id": 5,
+        "name": "Coloris",
+        "description": "4 days GameJam 2.5D platformer game",
+        "tag": ["All", "C#", "Isart"],
+        "image": "/images/projects/coloris.png",
+        "releaseLink": "#",
+        "sourcesLink": "https://github.com/Hezaerd/Coloris"
+    },
+    {
+        "id": 6,
+        "name": "Nautikart",
+        "description": "Mario Kart like racing game but underwater",
+        "tag": ["All", "C++", "Isart"],
+        "image": "/images/projects/nautikart.png",
+        "releaseLink": "https://github.com/BreizhBienv/NautiKart/releases/tag/v1.0.0",
+        "sourcesLink": "https://github.com/BreizhBienv/NautiKart"
+    }
+]
