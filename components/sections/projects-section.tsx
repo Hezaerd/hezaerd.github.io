@@ -6,12 +6,12 @@ import { motion, useInView } from "framer-motion";
 const ProjectData = [
     {
         id: 1,
-        name: "HezEngine",
-        description: "My own game engine (WIP)",
-        tag: ["All", "C++", "Hez"],
-        image: "/images/projects/hezengine.png",
-        releaseLink: "#",
-        sourcesLink: "https://github.com/Hezaerd/HezEngine",
+        name: "BirdMancer",
+        description: "Tech art project trying to push Niagara to its limits",
+        tag: ["All", "Isart"],
+        image: "/images/projects/birdmancer.gif",
+        releaseLink: "https://github.com/Hezaerd/BirdMancer/releases/tag/v1.0.0",
+        sourcesLink: "https://github.com/Hezaerd/BirdMancer",
     },
     {
         id: 2,
@@ -34,7 +34,7 @@ const ProjectData = [
     {
         id: 4,
         name: "HezAudio",
-        description: "A simple audio library based on OpenAL",
+        description: "An audio library based on OpenAL",
         tag: ["All", "C++", "Hez"],
         image: "/images/projects/hezaudio.png",
         releaseLink: "#",
@@ -43,7 +43,7 @@ const ProjectData = [
     {
         id: 5,
         name: "Coloris",
-        description: "This is a project description",
+        description: "4 days GameJam 2.5D platformer game",
         tag: ["All", "C#", "Isart"],
         image: "/images/projects/coloris.png",
         releaseLink: "#",
@@ -52,7 +52,7 @@ const ProjectData = [
     {
         id: 6,
         name: "Nautikart",
-        description: "Mario Kart like racing game",
+        description: "Mario Kart like racing game but underwater",
         tag: ["All", "C++", "Isart"],
         image: "/images/projects/nautikart.png",
         releaseLink: "https://github.com/BreizhBienv/NautiKart/releases/tag/v1.0.0",
