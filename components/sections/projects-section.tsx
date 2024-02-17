@@ -1,94 +1,16 @@
 import React, { useState, useRef } from "react";
 import ProjectCard from "../projects/project-card";
 import ProjectTag from "../projects/project-tag";
+import Projects from "@/public/projects/projects.json";
+import Tags from "@/public/projects/tags.json";
 import { motion, useInView } from "framer-motion";
-
-const ProjectData = [
-    {
-        id: 1,
-        name: "HezEngine",
-        description: "My own game engine (WIP)",
-        tag: ["All", "C++", "Hez"],
-        image: "/images/projects/hezengine.png",
-        releaseLink: "#",
-        sourcesLink: "https://github.com/Hezaerd/HezEngine",
-    },
-    {
-        id: 2,
-        name: "CoorsLight Engine",
-        description: "Graduation project at Isart Digital Montréal",
-        tag: ["All", "C++", "Isart"],
-        image: "/images/projects/coorslight.png",
-        releaseLink: "#",
-        sourcesLink: "https://github.com/gabrielboisvert/CoorsLightEngine",
-    },
-    {
-        id: 3,
-        name: "HezMaths",
-        description: "Collection of mathemathical tools for rendering",
-        tag: ["All", "C++", "Hez"],
-        image: "/images/projects/hezmaths.png",
-        releaseLink: "#",
-        sourcesLink: "https://github.com/Hezaerd/HezMaths",
-    },
-    {
-        id: 4,
-        name: "HezAudio",
-        description: "A simple audio library based on OpenAL",
-        tag: ["All", "C++", "Hez"],
-        image: "/images/projects/hezaudio.png",
-        releaseLink: "#",
-        sourcesLink: "https://github.com/Hezaerd/HezAudio",
-    },
-    {
-        id: 5,
-        name: "Coloris",
-        description: "This is a project description",
-        tag: ["All", "C#", "Isart"],
-        image: "/images/projects/coloris.png",
-        releaseLink: "#",
-        sourcesLink: "https://github.com/Hezaerd/Coloris",
-    },
-    {
-        id: 6,
-        name: "Nautikart",
-        description: "Mario Kart like racing game",
-        tag: ["All", "C++", "Isart"],
-        image: "/images/projects/nautikart.png",
-        releaseLink: "https://github.com/BreizhBienv/NautiKart/releases/tag/v1.0.0",
-        sourcesLink: "https://github.com/BreizhBienv/NautiKart",
-    }
-];
-
-const Tags = [
-    {
-        id: 1,
-        name: "All",
-    },
-    {
-        id: 2,
-        name: "C++",
-    },
-    {
-        id: 3,
-        name: "C#",
-    },
-    {
-        id: 4,
-        name: "Hez",
-    },
-    {
-        id: 5,
-        name: "Isart",
-    }
-];
 
 const Projects_Section = () => {
     const [currentTag, setTag] = useState("All");
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
 
-    const filterProjects = ProjectData.filter((project) => 
+    const filterProjects = Projects.filter((project) => 
         project.tag.includes(currentTag)
     );
 
@@ -135,7 +57,7 @@ const Projects_Section = () => {
                             imgUrl={project.image}
                             releaseLink={project.releaseLink}
                             sourcesLink={project.sourcesLink}
-                            />
+                        />
                     </motion.li>
                 ))}
             </ul>
