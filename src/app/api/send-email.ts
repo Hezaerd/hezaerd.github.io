@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import { Resend } from 'resend';
-import { EmailTemplate } from '@/components/templates/email-template';
+import { EmailTemplate } from '@/src/components/templates/email-template';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const to_email = process.env.TO_EMAIL || '';

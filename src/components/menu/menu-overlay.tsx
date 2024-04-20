@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import NavLink from '../nav/nav-link';
+import NavLink from '@/src/components/nav/nav-link';
 
 interface Link {
   name: string;

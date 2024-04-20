@@ -1,14 +1,16 @@
-import Hero_Section from "@/components/sections/hero-section";
-import Navbar_Section from "@/components/sections/navbar-section";
-import About_Section from "@/components/sections/about-section";
-import Projects_Section from "@/components/sections/projects-section";
-import Footer_Section from "@/components/sections/footer-section";
-import Contact_Section from "@/components/sections/contact-section";
+'use client';
+
+import Hero_Section from "@/src/components/sections/hero-section";
+import Navbar_Section from "@/src/components/sections/navbar-section";
+import About_Section from "@/src/components/sections/about-section";
+import Projects_Section from "@/src/components/sections/projects-section";
+import Footer_Section from "@/src/components/sections/footer-section";
+import Contact_Section from "@/src/components/sections/contact-section";
 
 import Head from "next/head";
 import { ToastContainer } from "react-toastify";
 
-import "@/app/globals.css";
+import "@/src/app/globals.css";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
